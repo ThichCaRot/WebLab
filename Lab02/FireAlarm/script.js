@@ -52,21 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const nameInput = document.getElementById("name");
         const name = nameInput.value;
 
-        // Tạo một hàng mới trong bảng "Chưa sơ tán"
         const newRow = notEvacuatedTable.insertRow(-1);
         const cell1 = newRow.insertCell(0);
         const cell2 = newRow.insertCell(1);
         cell1.innerHTML = name;
         cell2.innerHTML = '<input type="checkbox" class="evacuateCheckbox">';
 
-        nameInput.value = ""; // Xóa giá trị của trường nhập liệu sau khi gửi
+        nameInput.value = "";
 
-        // Xử lý sự kiện chuyển dữ liệu từ "Chưa sơ tán" sang "Đã sơ tán"
         const evacuateCheckboxes = document.querySelectorAll(".evacuateCheckbox");
         evacuateCheckboxes.forEach(function (checkbox) {
             checkbox.addEventListener("change", function () {
                 if (checkbox.checked) {
-                    // Di chuyển hàng từ "Chưa sơ tán" sang "Đã sơ tán"
                     const row = checkbox.parentElement.parentElement;
                     evacuatedTable.appendChild(row);
                 }

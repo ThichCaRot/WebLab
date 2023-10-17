@@ -42,7 +42,22 @@
         </ul>
         <h2>Form Cứu Hộ</h2>
         <form id="rescueForm">
-            <input type="text" id="name" placeholder="Tên người cần cứu hộ" required>
+            <input type="text" id="name" placeholder="Tên" required>
+            <input type="text" id="toa" placeholder="Toà" required>
+            <input type="text" id="phong" placeholder="Phòng" required>
+            
+            <label for="coTreCon">Có trẻ con:</label>
+            <select id="coTreCon" required>
+                <option value="co">Có</option>
+                <option value="khong">Không</option>
+            </select>
+            
+            <label for="coNguoiGia">Có người già:</label>
+            <select id="coNguoiGia" required>
+                <option value="co">Có</option>
+                <option value="khong">Không</option>
+            </select>
+        
             <button type="submit">Gửi</button>
         </form>
         <div>
