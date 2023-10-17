@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Giới thiệu bản thân</a></li>
+            <li><a href="#contact">Gửi thông tin và liên hệ cùng tôi</a></li>
+        </ul>
+    </nav>
+    <div id="introduction">
+        <h1 style="color: #CAEDFF;">Giới thiệu bản thân</h1>
+        <img src="avatar.jpg" alt="Ảnh đại diện của tôi" width="200" height="200">
+
+        <h2 style="color: #D8B4F8;">Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Thích Cà Rốt</li>
+            <li>Ngày sinh: 25/08/2002</li>
+            <li>Địa chỉ: Vũ trụ nào đó</li>
+        </ul>
+
+        <h2 style="color: #D8B4F8;">Sở thích</h2>
+        <h3 style="color: #FFC7EA;">Món ăn</h3>
+        <ul>
+            <li>Ẩn</li>
+            <li>Ẩn</li>
+            <li>Ẩn</li>
+        </ul>
+
+        <h3 style="color: #FFC7EA;">Giải trí</h3>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>Shogi</li>
+            <li>Honkai Star Rail</li>
+            <li>Total War</li>
+        </ul>
+
+        <h4>Bài hát yêu thích</h4>
+        <p>Thay vào đó ghi nghệ sĩ yêu thích được hông? :3</p>
+        <ol>
+            <li>BTS</li>
+            <li>ClariS</li>
+            <li>Lisa (JP, not BlackPink) 🥲</li>
+        </ol>
+        <h2 style="color: #D8B4F8;">Mục tiêu của bản thân</h2>
+        <table>
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn Thành</th>
+            </tr>
+            <tr>
+                <td>Qua môn</td>
+                <td>Trong kì này</td>
+                <td><input type="checkbox" name="goal1"></td>
+            </tr>
+            <tr>
+                <td>Xong deadline</td>
+                <td>Trong hôm nay</td>
+                <td><input type="checkbox" name="goal2"></td>
+            </tr>
+            <tr>
+                <td>Đi ngủ</td>
+                <td>Ngày nào cũng tick</td>
+                <td><input type="checkbox" name="goal3"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="contact">
+        <h1 style="color: #CAEDFF;">Gửi thông tin và liên hệ cùng tôi</h1>
+        <form>
+            <label for="fname">Họ tên:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <br>
+            <label for="lname">Email:</label>
+            <input type="text" id="lname" name="lname">
+        </form>
+        <br>
+        <label for="w3review">Tin nhắn:</label>
+        <br>
+        <textarea id="w3review" name="w3review" rows="4" cols="50">
+        Nhập con ma gì cũng được
+        </textarea>
+        <br>
+        <br>
+        <p>Giới tính</p>
+        <input type="radio" id="html" name="fav_language" value="Nam">
+        <label for="html">Nam</label>
+        <input type="radio" id="css" name="fav_language" value="Nữ">
+        <label for="css">Nữ</label><br>
+        <p>Sở thích</p>
+        <form action="/action_page.php">
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1">Skip</label><br>
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1">Skip</label><br>
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1">Skip</label><br>
+        </form>
+        <form action="/action_page.php">
+        <label for="faculty">Choose your faculty:</label>
+        <select id="faculty" name="faculties">
+            <option value="CS">Computer Science</option>
+            <option value="CE">Computer Engineering</option>
+            <option value="IS">Information System</option>
+        </select>
+        <br>
+        <input type="submit">
+        </form>
+    </div>
+    <footer>
+        <p>@2023 20520688 Ngô Tạ Đình Phong</p>
+    </footer>
+</body>
+</html>
