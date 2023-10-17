@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -15,6 +16,7 @@ button {
     font-size: 18px;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .levelC {
@@ -35,4 +37,14 @@ button {
 .levelB-content,
 .levelA-content {
     display: none;
+}
+
+.levelB-content {
+    background-color: orange;
+    border: 2px solid orange;
+}
+
+.levelA-content {
+    background-color: red;
+    border: 2px solid red;
 }

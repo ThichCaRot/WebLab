@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
             currentState = "levelB";
             fireButton.classList.remove("levelC");
             fireButton.classList.add("levelB");
-            levelCContent.style.display = "none"; // Ẩn nội dung trạng thái 1
-            levelBContent.style.display = "block"; // Hiển thị nội dung trạng thái 2
+            levelCContent.style.display = "none"; 
+            levelBContent.style.display = "block"; 
         }
     });
 
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             currentState = "levelC";
             fireButton.classList.remove("levelB");
             fireButton.classList.add("levelC");
-            levelBContent.style.display = "none"; // Ẩn nội dung trạng thái 2
-            levelCContent.style.display = "block"; // Hiển thị nội dung trạng thái 1
+            levelBContent.style.display = "none"; 
+            levelCContent.style.display = "block";
         }
     });
 
@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
             currentState = "levelA";
             fireButton.classList.remove("levelC", "levelB");
             fireButton.classList.add("levelA");
-            levelCContent.style.display = "none"; // Ẩn nội dung trạng thái 1
-            levelBContent.style.display = "none"; // Ẩn nội dung trạng thái 2
-            levelAContent.style.display = "block"; // Hiển thị nội dung trạng thái 3
+            levelCContent.style.display = "none"; 
+            levelBContent.style.display = "none";
+            levelAContent.style.display = "block"; 
         } else if (currentState === "levelA") {
             currentState = "levelC";
             fireButton.classList.remove("levelA");
             fireButton.classList.add("levelC");
-            levelAContent.style.display = "none"; // Ẩn nội dung trạng thái 3
-            levelCContent.style.display = "block"; // Hiển thị nội dung trạng thái 1
+            levelAContent.style.display = "none";
+            levelCContent.style.display = "block";
         }
     });
 });
