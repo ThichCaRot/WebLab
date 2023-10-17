@@ -40,7 +40,35 @@
             <li>Gọi cứu hỏa bằng số điện thoại 114 hoặc số điện thoại cứu hỏa địa phương.</li>
             <li>Thực hiện kế hoạch sơ tán hoặc lưu trú an toàn nếu cần thiết và tuân thủ hướng dẫn của cơ quan cứu hỏa.</li>
         </ul>
+        <h2>Form Cứu Hộ</h2>
+        <form id="rescueForm">
+            <input type="text" id="name" placeholder="Tên người cần cứu hộ" required>
+            <button type="submit">Gửi</button>
+        </form>
+        <div>
+            <h2>Chưa sơ tán</h2>
+            <table id="notEvacuatedTable">
+                <tr>
+                    <th>Tên</th>
+                    <th>Đã sơ tán</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Đã sơ tán</h2>
+            <table id="evacuatedTable">
+                <tr>
+                    <th>Tên</th>
+                    <th>Đã sơ tán</th>
+                </tr>
+            </table>
+        </div>
     </div>
+    <footer>
+        <h2>Thông tin người xây dựng trang web</h2>
+        <p>Tên: Ngô Tạ Đình Phong</p>
+        <p>Mã số Sinh viên: 20520688</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

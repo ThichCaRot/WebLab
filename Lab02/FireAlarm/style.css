@@ -39,12 +39,19 @@ button {
     display: none;
 }
 
+.levelC-content {
+    border: 2px solid #545454;
+    padding: 10px; 
+    background-color: white; 
+}
+
 .levelB-content {
     background-color: orange;
     border: 2px solid orange;
 }
 
 .levelA-content {
-    background-color: red;
+    background-color: #fdb8a1;
     border: 2px solid red;
 }
+
