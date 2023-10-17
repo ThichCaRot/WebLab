@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #545454;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.levelC {
+    background-color: #545454;
+    color: white;
+}
+
+.levelB {
+    background-color: orange;
+    box-shadow: 0 0 40px rgba(255, 255, 0, 0.8);
+}
+
+.levelA {
+    background-color: red;
+    box-shadow: 0 0 40px rgba(255, 102, 0, 0.8);
+}
