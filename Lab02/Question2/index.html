@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+
+<div id="calculator">
+  <div id="display">0</div>
+  <div class="button-row">
+    <button class="operator" onclick="clearDisplay()">CE</button>
+    <button class="operator" onclick="deleteDigit()">Del</button>
+    <button class="operator" onclick="appendOperator('+')">+</button>
+  </div>
+  <div class="button-row">
+    <button class="operator" onclick="appendOperator('-')">-</button>
+    <button class="operator" onclick="appendOperator('*')">*</button>
+    <button class="operator" onclick="appendDecimal()">.</button>
+  </div>
+  <div class="button-row">
+    <button class="number" onclick="appendDigit(9)">9</button>
+    <button class="number" onclick="appendDigit(8)">8</button>
+    <button class="number" onclick="appendDigit(7)">7</button>
+  </div>
+  <div class="button-row">
+    <button class="number" onclick="appendDigit(6)">6</button>
+    <button class="number" onclick="appendDigit(5)">5</button>
+    <button class="number" onclick="appendDigit(4)">4</button>
+  </div>
+  <div class="button-row">
+    <button class="number" onclick="appendDigit(3)">3</button>
+    <button class="number" onclick="appendDigit(2)">2</button>
+    <button class="number" onclick="appendDigit(1)">1</button>
+  </div>
+  <div class="button-row">
+    <button class="number" onclick="appendDigit(0)">0</button>
+    <button class="number" onclick="appendDecimal()">.</button>
+    <button class="operator" onclick="calculateResult()">=</button>
+  </div>
+</div>
+
+<script src="calculator.js"></script>
+
+</body>
+</html>
